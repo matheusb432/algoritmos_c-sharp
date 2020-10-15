@@ -1,0 +1,6 @@
+C:\Users\usuário\source\repos\AlgoritmosSolucao\AlgoritmosOrdenacao\bin\Debug\AlgoritmosOrdenacao.dll
+C:\Users\usuário\source\repos\AlgoritmosSolucao\AlgoritmosOrdenacao\bin\Debug\AlgoritmosOrdenacao.pdb
+C:\Users\usuário\source\repos\AlgoritmosSolucao\AlgoritmosOrdenacao\obj\Debug\AlgoritmosOrdenacao.csprojAssemblyReference.cache
+C:\Users\usuário\source\repos\AlgoritmosSolucao\AlgoritmosOrdenacao\obj\Debug\AlgoritmosOrdenacao.csproj.CoreCompileInputs.cache
+C:\Users\usuário\source\repos\AlgoritmosSolucao\AlgoritmosOrdenacao\obj\Debug\AlgoritmosOrdenacao.dll
+C:\Users\usuário\source\repos\AlgoritmosSolucao\AlgoritmosOrdenacao\obj\Debug\AlgoritmosOrdenacao.pdb

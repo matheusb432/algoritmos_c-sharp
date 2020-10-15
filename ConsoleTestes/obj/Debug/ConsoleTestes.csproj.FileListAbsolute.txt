@@ -1,0 +1,10 @@
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\obj\Debug\ConsoleTestes.csprojAssemblyReference.cache
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\obj\Debug\ConsoleTestes.csproj.CoreCompileInputs.cache
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\bin\Debug\ConsoleTestes.exe.config
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\bin\Debug\ConsoleTestes.exe
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\bin\Debug\ConsoleTestes.pdb
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\bin\Debug\AlgoritmosOrdenacao.dll
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\bin\Debug\AlgoritmosOrdenacao.pdb
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\obj\Debug\ConsoleTestes.csproj.CopyComplete
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\obj\Debug\ConsoleTestes.exe
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\obj\Debug\ConsoleTestes.pdb
