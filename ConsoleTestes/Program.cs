@@ -15,28 +15,49 @@ namespace ConsoleTestes
             var insertion = new InsertionSort();
             var selection = new SelectionSort();
             var counting = new CountingSort();
+            var quick = new QuickSort();
 
-            int[] array1 = { 2, 4, 5, 6, 7, 1, 10, 9, 8, 3 };
-            int[] array2 = { 3, 6, 4, 2, 1, 10, 7 };
-            int[] array3 = { 2, 3, 10, 5, 1, 6, 8 };
-            int[] array4 = { 5, 3, 2, 3, 5, 7, 1, 2, 9, 4, 0, 6, 8, 8, 1, 0, 9 };
+            Console.Write("Digite o tamanho da lista aleatória que deverá ser gerada: ");
+            int tamanho = Convert.ToInt32(Console.ReadLine());
 
-            bubble.arr = array1;
-            insertion.arr = array2;
-            selection.arr = array3;
-            counting.arr = array4;
+            int[] listaAleatoria = ListaAleatoria(tamanho);
+
+            bubble.arr = listaAleatoria;
+            insertion.arr = listaAleatoria;
+            selection.arr = listaAleatoria;
+            counting.arr = listaAleatoria;
+            quick.arr = listaAleatoria;
 
             bubble.Sort();
             insertion.Sort();
             selection.Sort();
-            counting.Sort();
+            counting.Sort(tamanho);
+            quick.Sort(0, quick.arr.Length - 1);
 
             bubble.printArray();
             insertion.printArray();
             selection.printArray();
             counting.printArray();
+            quick.printArray();
 
             Console.ReadLine();
         }
+
+        static int[] ListaAleatoria(int tamanho)
+        {
+            Random random = new Random();
+            int randInt;
+            int[] ListaAleatoria = new int[tamanho];
+
+            for (int i = 0; i < tamanho; i++)
+            {
+                randInt = random.Next(1, tamanho);
+
+                ListaAleatoria[i] = randInt;
+            }
+
+            return ListaAleatoria;
+        }
+
     }
 }

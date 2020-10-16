@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace AlgoritmosOrdenacao
 {
-    public class CountingSort : Algoritmo
+    public class CountingSort : Key
     {
-        public override void Sort()
+        public override void Sort(int key)
         {
-            int[] count = new int[10];
+            int[] count = new int[key];
             int[] output = new int[arr.Length];
 
             // Obs; essas operações não são necessárias, pois o valor padrao de arrays inicializados em C# é 0

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgoritmosOrdenacao
 {
-    public class BubbleSort : Algoritmo
+    public class BubbleSort : Comparison
     {
         public override void Sort()
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgoritmosOrdenacao
 {
-    public class InsertionSort : Algoritmo
+    public class InsertionSort : Comparison
     {
         public override void Sort()
         {

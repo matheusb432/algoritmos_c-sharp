@@ -43,9 +43,13 @@
   <ItemGroup>
     <Compile Include="Algoritmo.cs" />
     <Compile Include="BubbleSort.cs" />
+    <Compile Include="Comparison.cs" />
     <Compile Include="CountingSort.cs" />
+    <Compile Include="DivideAndConquer.cs" />
     <Compile Include="InsertionSort.cs" />
+    <Compile Include="Key.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickSort.cs" />
     <Compile Include="SelectionSort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

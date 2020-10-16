@@ -21,7 +21,5 @@ namespace AlgoritmosOrdenacao
             }
             Console.WriteLine("");
         }
-
-        public abstract void Sort();
     }
 }
