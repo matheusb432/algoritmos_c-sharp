@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlgoritmosOrdenacao
+﻿namespace AlgoritmosOrdenacao
 {
     public class QuickSort : DivideAndConquer
     {
@@ -27,9 +21,9 @@ namespace AlgoritmosOrdenacao
             int pivot = arr[fim];
             int i = inicio;
 
-            for (int j=inicio; j<fim; j++)
+            for (int j = inicio; j < fim; j++)
             {
-                if (arr[j] < pivot)
+                if (arr[j] < pivot) // Se o elemento é menor que o pivo, posicionar ele na sublista da esquerda
                 {
                     // Trocando os elementos para realizar a operacao de ordenacao
                     temp = arr[i];
@@ -42,10 +36,29 @@ namespace AlgoritmosOrdenacao
 
             int pivotIndex = i;
             // Posicionando o pivo entre a sublista da esquerda e da direita
-            temp = arr[pivotIndex];
-            arr[pivotIndex] = arr[fim];
-            arr[fim] = temp;
+            Swap(pivotIndex, fim);
             // Retornando o indice do pivo
+            return pivotIndex;
+        }
+
+        // PartitionAlt() ordena o array em ordem decrescente
+        private int PartitionAlt(int inicio, int fim)
+        {
+            int pivot = arr[fim];
+            int i = inicio;
+            for (int j = inicio; j < fim; j++)
+            {
+                if (arr[j] >= pivot) // Se o elemento é maior ou igual ao pivo, ordenar ele na sublista da esquerda
+                {
+                    temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                    i++;
+                }
+            }
+
+            int pivotIndex = i;
+            Swap(pivotIndex, fim);
             return pivotIndex;
         }
     }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlgoritmosOrdenacao
+﻿namespace AlgoritmosOrdenacao
 {
-    public class BubbleSort : Comparison
+    public class BubbleSort : NoParameters
     {
         public override void Sort()
         {
@@ -16,9 +10,7 @@ namespace AlgoritmosOrdenacao
                 {
                     if (arr[j] > arr[j + 1])
                     {
-                        temp = arr[j];
-                        arr[j] = arr[j + 1];
-                        arr[j + 1] = temp;
+                        Swap(j, j + 1);
                     }
                 }
             }

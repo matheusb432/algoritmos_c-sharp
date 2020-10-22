@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlgoritmosOrdenacao
+﻿namespace AlgoritmosOrdenacao
 {
-    public class SelectionSort : Comparison
+    public class SelectionSort : NoParameters
     {
         public override void Sort()
         {

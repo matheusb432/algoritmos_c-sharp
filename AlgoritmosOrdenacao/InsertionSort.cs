@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AlgoritmosOrdenacao
+﻿namespace AlgoritmosOrdenacao
 {
-    public class InsertionSort : Comparison
+    public class InsertionSort : NoParameters
     {
         public override void Sort()
         {
@@ -14,11 +8,9 @@ namespace AlgoritmosOrdenacao
             for (int i = 1; i < arr.Length; i++)
             {
                 j = i;
-                while(arr[j-1] > arr[j])
+                while (arr[j - 1] > arr[j])
                 {
-                    temp = arr[j - 1];
-                    arr[j - 1] = arr[j];
-                    arr[j] = temp;
+                    Swap(j, j - 1);
                     if (j > 1)
                         j--;
                 }

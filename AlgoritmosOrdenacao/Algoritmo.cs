@@ -1,10 +1,4 @@
 ﻿using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.IO.IsolatedStorage;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AlgoritmosOrdenacao
 {
@@ -13,13 +7,20 @@ namespace AlgoritmosOrdenacao
         public int[] arr;
         public int temp;
 
-        public void printArray()
+        public void PrintArray()
         {
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write("{0} ", arr[i]);
+                Console.Write("{0}\t", arr[i]);
             }
             Console.WriteLine("");
+        }
+
+        public void Swap(int index1, int index2)
+        {
+            temp = arr[index1];
+            arr[index1] = arr[index2];
+            arr[index2] = temp;
         }
     }
 }
