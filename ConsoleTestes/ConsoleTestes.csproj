@@ -54,6 +54,10 @@
       <Project>{3A55B536-221E-4335-B6CE-A2037585B56E}</Project>
       <Name>AlgoritmosOrdenacao</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AlgoritmosPesquisa\AlgoritmosPesquisa.csproj">
+      <Project>{54CDBD91-A52B-48FF-A3B3-F1D4D53547E2}</Project>
+      <Name>AlgoritmosPesquisa</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

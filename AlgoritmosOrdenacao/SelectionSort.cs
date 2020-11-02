@@ -4,7 +4,7 @@
     {
         public override void Sort()
         {
-            int min;                  // - 1
+            int min;                
             for (int i = 0; i < arr.Length; i++)
             {
                 min = arr[i];

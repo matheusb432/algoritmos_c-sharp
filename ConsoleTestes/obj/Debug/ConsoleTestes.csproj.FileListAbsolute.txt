@@ -8,3 +8,5 @@ C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\bin\Debug\Algorit
 C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\obj\Debug\ConsoleTestes.csproj.CopyComplete
 C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\obj\Debug\ConsoleTestes.exe
 C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\obj\Debug\ConsoleTestes.pdb
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\bin\Debug\AlgoritmosPesquisa.dll
+C:\Users\usuário\source\repos\AlgoritmosSolucao\ConsoleTestes\bin\Debug\AlgoritmosPesquisa.pdb

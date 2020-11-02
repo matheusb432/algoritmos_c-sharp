@@ -6,6 +6,71 @@ namespace AlgoritmosOrdenacao
 {
     public class BucketSort
     {
+        public List<double> lista;
+
+        public BucketSort(List<double> _lista)
+        {
+            lista = _lista;
+        }
+
+        public void Sort()
+        {
+            int n = lista.Count(), indice, k = 0;
+            List<List<double>> bucketMatrix = new List<List<double>>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                bucketMatrix.Add(new List<double>());
+            }
+
+            for (int i = 0; i < lista.Count(); i++)
+            {
+                indice = (int)lista[i] * 10;
+                bucketMatrix[indice].Add(lista[i]);
+            }
+            for (int i = 0; i < bucketMatrix.Count(); i++)
+            {
+                InsertionSort(bucketMatrix[i]);
+            }
+
+            for (int i = 0; i < bucketMatrix.Count(); i++)
+            {
+                for (int j = 0; j < bucketMatrix[i].Count(); j++)
+                {
+                    lista[k] = bucketMatrix[i][j];
+                    k++;
+                }
+            }
+        }
+
+        private void InsertionSort(List<double> doubleList)
+        {
+            double key;
+            int j;
+
+            for (int i = 0; i < doubleList.Count(); i++)
+            {
+                key = doubleList[i];
+                j = i - 1;
+                while (j >= 0 && doubleList[j] > key)
+                {
+                    doubleList[j + 1] = doubleList[j];
+                    j--;
+                }
+                doubleList[j + 1] = key;
+            }
+        }
+
+        public void PrintList()
+        {
+            for (int i = 0; i < lista.Count(); i++)
+            {
+                Console.Write("{0}\t", lista[i]);
+            }
+            Console.WriteLine("");
+        }
+
+        /* ----------------------Versão Explicada------------------------
         // Como o bucket sort necessita de matrizes para ser executado, implementei este algoritmo com listas para simplificar o processo
         public List<float> lista;
 
@@ -43,7 +108,7 @@ namespace AlgoritmosOrdenacao
                 // Aplicando insertion sort como subrotina em cada linha da matriz
                 InsertionSort(bucketMatrix[i]);
             }
-      
+
             for (int i = 0; i < bucketMatrix.Count(); i++)
             {
                 for (int j = 0; j < bucketMatrix[i].Count(); j++)
@@ -79,6 +144,7 @@ namespace AlgoritmosOrdenacao
                 Console.Write("{0}\t", lista[i]);
             }
             Console.WriteLine("");
-        }
+        }  
+        */
     }
 }

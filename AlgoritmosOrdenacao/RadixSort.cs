@@ -6,6 +6,46 @@ namespace AlgoritmosOrdenacao
     {
         public override void Sort()
         {
+            int maior = arr.Max();
+
+            int exp = 1;
+            while (maior / exp > 0)
+            {
+                CountingSort(exp);
+                exp *= 10;
+            } 
+        }
+
+        private void CountingSort(int exp)
+        {
+            int n = arr.Length;
+            int[] count = new int[10];
+            int[] output = new int[n];
+            int indice;
+
+            for (int i = 0; i < n; i++)
+            {
+                indice = (arr[i] / exp) % 10;
+                count[indice]++;
+            }
+            for (int i = 1; i < count.Length; i++)
+            {
+                count[i] += count[i - 1];
+            }
+            for (int i = n - 1; i >= 0; i--)
+            {
+                indice = (arr[i] / exp) % 10;
+                output[--count[indice]] = arr[i];
+            }
+            for (int i = 0; i < n; i++)
+            {
+                arr[i] = output[i];
+            }
+        }
+
+        /* --------------Versão Explicada------------------
+        public override void Sort()
+        {
             // Definindo o maior numero do array em maior para identificar a ordem de magnitude do maior valor do array
             int maior = arr.Max();
 
@@ -13,8 +53,8 @@ namespace AlgoritmosOrdenacao
             while (maior / exp > 0) // Enquanto o maior valor dividido pelo expoente é maior do que zero
             {
                 CountingSort(exp);
-                exp *= 10;  // Quando a ordem de magnitude de exp for maior que a ordem de magnitude de maior, o loop encerra
-            }
+                exp *= 10;
+            }  // Quando a ordem de magnitude de exp for maior que a ordem de magnitude de maior, o loop encerra
         }
 
         private void CountingSort(int exp)
@@ -52,5 +92,6 @@ namespace AlgoritmosOrdenacao
                 arr[i] = output[i];
             }
         }
+         */
     }
 }
